@@ -3,6 +3,9 @@ import streamlit as st
 import plotly.graph_objects as go
 import plotly.express as px
 
+
+st.set_page_config(layout="wide")
+
 st.title("School Distribution in Kenya.")
 df=pd.read_csv("MOE clean data")
 
@@ -11,22 +14,7 @@ df=pd.read_csv("MOE clean data")
 st.write('''The main aim of the project is to check on how education is distributed across Kenyan Provinces based on the sponsor (founder),type of school (Private or public)
          and also the different level of education offered based on the needs of the people of the different locations in the 8 Provinces of Kenya.        ''')
 
-st.title("Distribution by the 8 provinces in Kenya.")
-
-
-# st.image(r"C:\Users\DELL\Desktop\ADS Project file\distribution.png",use_column_width=True)
-
-
-# st.write("School distribution in Rift Valley Province:")
-
-# rift_valley=df[df["PROVINCE"]=="RIFT VALLEY"]
-# priv=rift_valley[rift_valley["Status"]=="PRIVATE"]
-# pub=rift_valley[rift_valley["Status"]=="PUBLIC"]
-# print("Private schools:Rift valley",len(priv))
-# print("Public schools:Rift Valley",len(pub))
-# fig=px.scatter(rift_valley,x="Level",y="Sponsor",color="Status")
-# st.plotly_chart(fig)
-
+st.title("Distribution by the 8 provinces in Kenya .")
 
 
 
@@ -366,3 +354,5 @@ fig.update_layout(
 st.plotly_chart(fig,use_container_width=True)
 ("Private schools:Nyanza",len(priv))
 st.write("Public schools:Nyanza",len(pub))
+
+
