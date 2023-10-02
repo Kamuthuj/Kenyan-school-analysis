@@ -16,4 +16,8 @@ At tertiary level, there are different forms of education such as public and pri
 
 
 METHODOLOGY.
-I used a data set from the Ministry Of Education in Kenya
+I used a data set from the Ministry Of Education in Kenya. I perfomed the ETL processes and discovered that the data had various missing values where I used an imputer to fill the null values with the mode(The data was based on string values)
+I dealt with the duplicates by dropping them to have a data set with Unique values.
+I did some feature extraction to encode some of the columns to get insights on the data as working with continous variable was much easier.
+I extracted the coordinates column from the data frame to create a new data frame to easily iterate through the coordinates to create the geojson plots of the school distribution.
+
