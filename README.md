@@ -21,3 +21,6 @@ I dealt with the duplicates by dropping them to have a data set with Unique valu
 I did some feature extraction to encode some of the columns to get insights on the data as working with continous variable was much easier.
 I extracted the coordinates column from the data frame to create a new data frame to easily iterate through the coordinates to create the geojson plots of the school distribution.
 
+
+VIEW ON WIDE MODE.
+
