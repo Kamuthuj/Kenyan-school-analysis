@@ -2,9 +2,8 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
 import plotly.express as px
-
-
 st.set_page_config(layout="wide")
+
 
 st.title("School Distribution in Kenya.")
 df=pd.read_csv("MOE clean data")
