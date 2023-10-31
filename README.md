@@ -1,27 +1,4 @@
-The purpose of the project is to do an evaluation of the distribution of schools in Kenya based on their founders(Sponsor) and evaluate if an institution is Public or Private.
+The primary goal of this project is to conduct a comprehensive evaluation of the distribution of schools in Kenya, with a particular focus on the role of their founders or sponsors, while distinguishing between public and private institutions. This analysis encompasses all eight provinces in Kenya: Rift Valley, North Eastern, Coast, Western, Eastern, Nairobi, Central, and Nyanza. Within the complex landscape of the education sector, various stakeholders play pivotal roles, with religious organizations taking the lead. The distribution of schools across these provinces is not uniform, and it is influenced by factors such as the demand for education and geographical location. It is worth noting that Kenya's population is predominantly composed of individuals between the ages of 0-18 years, resulting in a substantial demand for Early Childhood Development (ECD), primary, and secondary education. The quality of education is closely linked to the classification of the school as public or private. Typically, private schools are considered more prestigious, thus their enrollment rates are lower compared to public schools.At the tertiary level, the education landscape includes diverse options such as public and private universities, technical training institutes, technology institutes, and national polytechnics. However, these higher learning institutions are relatively scarce due to the high costs associated with establishing and maintaining them, including the need to offer a wide array of courses. As a result, the fees charged by these institutions are considerably high, discouraging many potential students from enrolling. To counteract this, the Kenyan government has made efforts to increase enrollment by encouraging students to take loans through the Higher Education Loans Board (HELB).All visual representations of school distribution across provinces are conveniently accessible through a Streamlit application.
 
-The analysis is based on the 8 Provinces in Kenya:
-1.Rift Valley.
-2.North Eastern.
-3.Coast.
-4.Western.
-5.Eastern
-6.Nairobi.
-7.Central.
-8.Nyanza.
-
-Different stakeholders are Key players in the education industry led by Religious Organizations. Also the distribution of these learning is uneven and is dependant on various things such as demand for education and also geographical location. The Population of Kenya is highest between 0-18 years creating a high demand for ECD,Primary and Secondary education. Quality of the education is based on the status of the school(Public or Private). Private schools tend to be more prestigious than public schools hence enrollment in the private is not as high as the public ones.
-
-At tertiary level, there are different forms of education such as public and private university education,technical training institutes,insititutes if technology and also national polytechs.These are the higher learning institutions but are very few because starting such institutions is very expensive as they have to havew diverse courses to learn making them quite expensive. In Kenya these institutions charge very high fee charges discouraging enrollment. Also the Kenyan government has tried to increase the enrollment to this institutions where they encourage students to take loans through the Higher Education Loans Board(HELB). All visualizations of school distribution by their Provinces is shown in the streamlit app.
-
-
-METHODOLOGY.
-I used a data set from the Ministry Of Education in Kenya. I perfomed the ETL processes and discovered that the data had various missing values where I used an imputer to fill the null values with the mode(The data was based on string values)
-I dealt with the duplicates by dropping them to have a data set with Unique values.
-On the column "Sponsor" I dropped sponsors whose value counts were < 10 as their contribution was minimal.
-I did some feature extraction to encode some of the columns to get insights on the data as working with continous variable was much easier.
-I extracted the coordinates column from the data frame to create a new data frame to easily iterate through the coordinates to create the geojson plots of the school distribution.
-
-
-VIEW ON WIDE MODE.
-
+METHODOLOGY:
+To conduct this analysis, I utilized a dataset provided by the Ministry of Education in Kenya. The dataset underwent an Extract, Transform, Load (ETL) process to prepare it for analysis. During this process, I addressed missing data by imputing null values with the mode, considering that the data primarily consisted of string values. Duplicates were removed to create a dataset with unique values, enhancing data integrity. In the "Sponsor" column, sponsors with value counts less than 10 were dropped from the dataset as their contribution was deemed minimal, and their numbers were relatively high. Furthermore, feature extraction was employed to encode categorical columns as continuous variables, facilitating a more in-depth analysis of the data.To enhance the visualization of school distribution, I extracted the coordinates from the dataset to create a separate data frame. This allowed for easy iteration through the coordinates, simplifying the process of generating geojson plots illustrating the distribution of schools across the regions.
